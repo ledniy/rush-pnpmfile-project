@@ -1,0 +1,37 @@
+dependencies:
+  '@rush-temp/a': 'file:projects/a.tgz'
+  mkdirp: 0.5.1
+packages:
+  /minimist/0.0.8:
+    dev: false
+    resolution:
+      integrity: sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
+      tarball: 'http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz'
+  /mkdirp/0.5.1:
+    dependencies:
+      minimist: 0.0.8
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+      tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz'
+  /nanoid/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-SG2qscLE3iM4C0CNzGrsAojJHSVHMS1J8NnvJ31P1lH8P0hGHOiafmniNJz6w6q7vuoDlV7RdySlJgtqkFEVtQ==
+  'file:projects/a.tgz':
+    dependencies:
+      mkdirp: 0.5.1
+      nanoid: 2.0.0
+    dev: false
+    name: '@rush-temp/a'
+    resolution:
+      integrity: sha512-1f3pXLm9FcB+O0ZC06qqq1lzuE8p3e/R6OWThdXnaXv7ljWzsWWZWwP55Sqa8iiYMivFRoZ++1NrMTYEWwiTpQ==
+      tarball: 'file:projects/a.tgz'
+    version: 0.0.0
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@rush-temp/a': 'file:./projects/a.tgz'
+  mkdirp: ^0.5.1
